@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Round 2</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Welcome to Round 2</h1>
+        <p>What is the largest mammal on Earth?</p>
+        <input type="text" id="answer">
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <p id="result-message"></p>
+    </div>
+    <script src="quiz-script.js"></script>
+</body>
+</html>

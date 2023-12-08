@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer").value.toLowerCase();
+
+        if (userAnswer === "paris") {
+            displayResult("Correct! You may proceed to Round 2.");
+            setTimeout(() => {
+                window.location.href = "page2.html";
+            }, 2000); // Redirect to Round 2 after 2 seconds
+        } else {
+            displayResult("Incorrect! Try again.");
+        }
+    }
+
+    function displayResult(message) {
+        document.getElementById("result-message").textContent = message;
+    }
+});
